@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Unit Converter</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Unit Converter</h1>
+        <ul class="nav-hor-list">
+            <li><a href="length.html">Length</a></li>
+            <li><a href="weight.html">Weight</a></li>
+            <li><a href="temperature.html">Temperature</a></li>
+        </ul>
+
+        <!-- FORM WILL USE AJAX TO FETCH DATA FROM BACKEND -->
+        <form action="/temperature" method="post">
+
+            <label for="temperature">Enter temperature</label> <br>
+            <input type="text" name="temperature" id="temperature"> <br>
+
+            <!-- Temperature: Celsius, Fahrenheit, Kelvin. -->
+
+            <label for="ftemperature">From unit</label> <br>
+            <select name="ftemperature" id="ftemperature">
+                <option value="">---Select---</option>
+                <option value="celsius">celsius</option>
+                <option value="fahrenheit">fahrenheit</option>
+                <option value="kelvin">kelvin</option>
+            </select> <br>
+
+            <label for="ttemperature">To unit</label> <br>
+            <select name="ttemperature" id="ttemperature">
+                <option value="">---Select---</option>
+                <option value="celsius">celsius</option>
+                <option value="fahrenheit">fahrenheit</option>
+                <option value="kelvin">kelvin</option>
+            </select> <br>
+
+            <button type="submit">Convert</button>
+        </form>
+
+    </div>
+
+    <script src=""></script>
+</body>
+
+</html>
