@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Unit Converter</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Unit Converter</h1>
+        <ul class="nav-hor-list">
+            <li><a href="length.html">Length</a></li>
+            <li><a href="weight.html">Weight</a></li>
+            <li><a href="temperature.html">Temperature</a></li>
+        </ul>
+
+        <h2 class="result" id="result"></h2>
+        <form id="convertForm">
+            <label for="input">Enter weight</label> <br>
+            <input type="text" name="input" id="input"> <br>
+
+            <label for="from">From unit</label> <br>
+            <select name="from" id="from">
+                <option value="">---Select---</option>
+                <option value="milligram">milligram</option>
+                <option value="gram">gram</option>
+                <option value="kilogram">kilogram</option>
+                <option value="ounce">ounce</option>
+                <option value="pound">pound</option>
+            </select> <br>
+
+            <label for="to">To unit</label> <br>
+            <select name="to" id="to">
+                <option value="">---Select---</option>
+                <option value="milligram">milligram</option>
+                <option value="gram">gram</option>
+                <option value="kilogram">kilogram</option>
+                <option value="ounce">ounce</option>
+                <option value="pound">pound</option>
+            </select> <br>
+
+            <button type="submit">Convert</button>
+        </form>
+        <button id="resetButton">Reset</button>
+    </div>
+
+    <script>
+        var pageName = "weight";
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

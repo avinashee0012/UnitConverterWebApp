@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Unit Converter</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Unit Converter</h1>
+        <ul class="nav-hor-list">
+            <li><a href="length.html">Length</a></li>
+            <li><a href="weight.html">Weight</a></li>
+            <li><a href="temperature.html">Temperature</a></li>
+        </ul>
+        <h2 class="error" id="message"></h2>
+
+        <button onclick="fetchMessage()">Click Me</button>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        function fetchMessage() {
+            fetch('/index')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("message").innerText = data;
+                })
+                .catch(error => console.error('Error:', error));
+        }
+    </script>
+</body>
+
+</html>
