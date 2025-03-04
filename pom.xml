@@ -14,6 +14,7 @@
 	<name>unitconverterwebapp</name>
 	<description>Unit Converter Web App</description>
 	<url/>
+	<packaging>war</packaging>
 	<licenses>
 		<license/>
 	</licenses>
