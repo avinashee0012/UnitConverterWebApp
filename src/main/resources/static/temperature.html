@@ -14,7 +14,7 @@
         <ul class="nav-hor-list">
             <li><a href="length.html">Length</a></li>
             <li><a href="weight.html">Weight</a></li>
-            <li><a href="temperature.html">Temperature</a></li>
+            <li class="active"><a href="temperature.html">Temperature</a></li>
         </ul>
 
         <form id="convertForm">
@@ -24,17 +24,17 @@
             <label for="from">From unit</label> <br>
             <select name="from" id="from">
                 <option value="">---Select---</option>
-                <option value="celsius">celsius</option>
-                <option value="fahrenheit">fahrenheit</option>
-                <option value="kelvin">kelvin</option>
+                <option value="C">celsius</option>
+                <option value="F">fahrenheit</option>
+                <option value="K">kelvin</option>
             </select> <br>
 
             <label for="to">To unit</label> <br>
             <select name="to" id="to">
                 <option value="">---Select---</option>
-                <option value="celsius">celsius</option>
-                <option value="fahrenheit">fahrenheit</option>
-                <option value="kelvin">kelvin</option>
+                <option value="C">celsius</option>
+                <option value="F">fahrenheit</option>
+                <option value="K">kelvin</option>
             </select> <br>
 
             <button type="submit">Convert</button>
@@ -42,7 +42,7 @@
     </div>
 
     <script>
-        var pageName = "weight";
+        var pageName = "temperature";
     </script>
     <script src="script.js"></script>
 </body>

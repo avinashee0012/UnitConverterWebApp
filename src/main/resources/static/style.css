@@ -47,7 +47,11 @@ h1 {
     text-decoration: none;
     color: black;
 }
-.nav-hor-list li :hover {
+.nav-hor-list li:hover {
+    border-bottom: 2px solid rgb(85, 85, 207);
+}
+
+.nav-hor-list li.active{
     border-bottom: 2px solid rgb(85, 85, 207);
 }
 
