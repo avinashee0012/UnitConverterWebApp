@@ -2,7 +2,7 @@ package com.rebellion.unitconverterwebapp.entity;
 
 public class FormInput {
     // FIELDS
-    private long input;
+    private String input;
     private String from;
     private String to;
 
@@ -10,18 +10,18 @@ public class FormInput {
     public FormInput() {
     }
 
-    public FormInput(long input, String from, String to) {
+    public FormInput(String input, String from, String to) {
         this.input = input;
         this.from = from;
         this.to = to;
     }
 
     // GETTERS AND SETTERS
-    public long getInput() {
+    public String getInput() {
         return input;
     }
 
-    public void setInput(long input) {
+    public void setInput(String input) {
         this.input = input;
     }
 
