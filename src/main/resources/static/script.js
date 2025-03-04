@@ -3,10 +3,6 @@ document.getElementById('convertForm').addEventListener('submit', getData);
 async function getData(event) {
     event.preventDefault();
 
-    document.getElementById('convertForm').style.display = "none";
-    document.getElementById('resetButton').style.display = "block";
-    document.getElementById('result').style.visibility = "visible";
-
     const formData = {
         input: document.getElementById('input').value,
         from: document.getElementById('from').value,
@@ -27,9 +23,11 @@ async function getData(event) {
         }
 
         const result = await response.text();
-        document.getElementById('result').innerText = `Converted ${pageName}: ${result}`;
+        document.getElementById('convertForm').innerHTML = `<div id="result"><h2 id="response"></h2><button id="resetButton" onclick="location.reload()">Reset</button></div>`;
+        document.getElementById('response').innerText = `Result of your calculation:\n ${result}`;
     } catch (error) {
         console.error('Error:', error);
-        document.getElementById('result').innerText = 'Error processing request';
+        document.getElementById('convertForm').innerHTML = `<div id="result"><h2 id="response"></h2><button id="resetButton" onclick="location.reload()">Reset</button></div>`;
+        document.getElementById('response').innerText = 'Error processing request';
     }
 }

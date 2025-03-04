@@ -12,18 +12,19 @@ body * {
 
 .container {
     margin: 5vh auto;
+    min-height: fit-content;
     height: 85vh;
     width: 30%;
     border: 1px solid black;
     border-radius: 5px;
     box-shadow: 5px 5px 20px gray;
     background-color: whitesmoke;
-    text-align: center;
+    text-align: left;
 }
 
 h1 {
     background-color: rgba(121, 119, 119, 0.623);
-    padding: 10px;
+    padding: 20px 35px;
     font-size: xx-large;
     text-transform: uppercase;
 }
@@ -34,6 +35,7 @@ h1 {
 
 .nav-hor-list {
     list-style-type: none;
+    padding: 0 20px;
     background-color: rgba(121, 119, 119, 0.384);
 }
 .nav-hor-list li {
@@ -49,20 +51,15 @@ h1 {
     border-bottom: 2px solid rgb(85, 85, 207);
 }
 
-#result {
-    margin: 3vh;
-    visibility: hidden;
-}
-
 form {
     margin: 10%;
     height: fit-content;
 }
 form input, form select {
-    margin: 10px;
-    width: 75%;
-    height: 30px;
-    border: 1px solid black;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 35px;
+    border: 1px solid rgba(0, 0, 0, 0.418);
 }
 
 button {
@@ -73,9 +70,4 @@ button {
 }
 button:hover {
     background-color: rgba(0, 0, 0, 0.295);
-}
-
-#resetButton {
-    margin: 2vh auto;
-    display: none;
 }
